@@ -35,4 +35,38 @@ void main(){
   print(texto9);
   print(texto10);
   print(texto11);
+
+  //Listass
+  var myList = [1, 2, 3, 4, 5];
+  List<String> myList2 = ['yopal', 'orocue', 'san luis', 'aguazul'];
+  List<String> myList3 = ['monterrey',...myList2];
+  List<String>? myList4;
+  List<String> myList5 = [...?myList4,...myList3];
+
+  var listSet = {'docker', 'Amazon', 'Netflix', 'git', 'Google'};
+  listSet.add('docker desktop');
+
+  var listMultidata = [1.0,"App test",true];
+
+  myList3.add('.aws');
+
+  var map = {
+      "name": 'rduarte',
+      "Job" : 'architech',
+      "Enable": true,
+  };
+
+  map['Job'] = 'NEW architech';
+
+
+
+  print(myList);
+  print(myList2);
+  print(myList2.reversed);
+  print(myList3);
+  print(listSet);
+  print(listMultidata);
+  print(map);
+
+  map.forEach((key, value) => print(value));                
 }
